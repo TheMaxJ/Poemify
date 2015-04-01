@@ -17,7 +17,7 @@ public class WordNetHook {
 		// Test stuff goes here
 	}
 	
-	public WordNetHook() {
+	static {
 		System.setProperty("wordnet.database.dir", "/usr/local/WordNet-3.0/dict");
 		wndb = WordNetDatabase.getFileInstance();
 	}
