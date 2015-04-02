@@ -24,7 +24,11 @@ public class WordNetHook {
 	
 	public static Synset[] getWordSynsets(String word) {
 		word = word.trim();
-		return wndb.getSynsets(word);
+		Synset[] synsets = wndb.getSynsets(word);
+		if (synsets.length == 0) {
+			synsets = SingleSynset.toSynset(word);
+		}
+		return synsets;
 	}
 	
 	public static List<Synset[]> getPhraseSynsets(String phrase) {
