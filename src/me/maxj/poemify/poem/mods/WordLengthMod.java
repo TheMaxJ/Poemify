@@ -11,7 +11,7 @@ public abstract class WordLengthMod extends LengthMod {
 	}
 	
 	public int getLineLength(ILine line) {
-		return line.getComplex().getWords().size();
+		return 0;
 	}
 
 }

@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Random;
 
 import edu.smu.tspell.wordnet.Synset;
-import me.maxj.poemify.ComplexSentence;
 import me.maxj.poemify.poem.ILine;
 import me.maxj.poemify.wordnet.WordNetHook;
 
@@ -52,19 +51,5 @@ public class SentenceBasedSynsetLine implements ILine {
 		// TODO Auto-generated method stub
 		
 	}
-
-	@Override
-	public ComplexSentence getComplex() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void updateStringFromComplex() {
-		// TODO Auto-generated method stub
-		
-	}
-	
-	
 	
 }

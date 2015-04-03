@@ -13,7 +13,7 @@ public class RandomSynsetMod extends SynsetMod {
 	private int freq;
 	
 	public static void main(String[] args) {
-		ILine line = new Line("This is a test line so I can test the thing");
+		ILine line = new Line("This is a test of the synset filter. Applesauce is high in potassium.");
 		List<ILine> test = new ArrayList<>();
 		test.add(line);
 		test = new RandomSynsetMod(test, 10).filter();
